@@ -1,0 +1,214 @@
+
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #292929;
+}
+
+/* NAVBAR */
+
+.navbar {
+  height: 85px;
+  padding: 0 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 800;
+  color: #f47b36;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 20px;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+/* HERO SECTION */
+
+.hero {
+  min-height: 750px;
+  padding: 70px 6%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+  background: linear-gradient(
+    110deg,
+    #fff0e4,
+    #fffaf5
+  );
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.collection {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 30px;
+  background: #fff0d8;
+  color: #a83e16;
+  border: 1px solid #f4d4a7;
+  margin-bottom: 30px;
+}
+
+.hero h1 {
+  font-size: clamp(48px, 6vw, 78px);
+  line-height: 1.1;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+.hero p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* BUTTONS */
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.hero-buttons button {
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.shop-btn {
+  background: #fa7134;
+  color: white;
+  border: none;
+}
+
+.lookbook-btn {
+  background: white;
+  border: 1px solid #e8c9a8;
+  color: #333;
+}
+
+/* FEATURES */
+
+.features {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 45px;
+  color: #666;
+  font-size: 13px;
+}
+
+/* FASHION VISUALS */
+
+.hero-visual {
+  height: 500px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fashion-card {
+  position: absolute;
+  width: 230px;
+  height: 320px;
+  border: 8px solid white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px #0002;
+}
+
+.fashion-card span {
+  font-size: 65px;
+  color: #f47b36;
+}
+
+.fashion-card h2 {
+  font-size: 35px;
+  margin-top: 15px;
+}
+
+.fashion-card p {
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin-top: 10px;
+}
+
+.card-one {
+  background: #f8dfc8;
+  transform: rotate(-8deg);
+  left: 10%;
+}
+
+.card-two {
+  background: #e7c4aa;
+  transform: rotate(8deg);
+  right: 10%;
+}
+
+/* FLOATING BADGES */
+
+.rating-card,
+.trending-card,
+.discount-card {
+  position: absolute;
+  padding: 15px;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0 5px 20px #0002;
+  font-size: 14px;
+}
+
+.rating-card {
+  right: 0;
+  top: 40px;
+}
+
+.trending-card {
+  left: 0;
+  top: 280px;
+  background: #fa8a36;
+  color: white;
+}
+
+.discount-card {
+  bottom: 40px;
+  right: 15%;
+  background: #fa7134;
+  color: white;
+  font-weight: bold;
+}
