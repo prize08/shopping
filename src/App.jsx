@@ -1,13 +1,12 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-
-import "./App.css";
+import React from "react";
+import Home from "./pages/Home";
+import Products from "./pages/Products";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Hero />
+      <Home />
+      <Products />
     </>
   );
 }
