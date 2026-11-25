@@ -1,5 +1,20 @@
+import Navbar from "../components/Navbar";
+import Hero from "../components/Hero";
+import Categories from "../components/Categories";
+import FeaturedProducts from "../components/FeaturedProducts";
+import Offers from "../components/Offers";
+import Footer from "../components/Footer";
 function Home() {
-  return <h1>Home Page</h1>;
+  return (
+    <>
+      <Navbar />
+      <Hero />
+      <Categories />
+      <FeaturedProducts />
+      <Offers />
+      <Footer />
+    </>
+  );
 }
 
 export default Home;
